@@ -10,7 +10,7 @@ Hands-on work rebuilding production-grade AWS DevOps skills after a career break
 
 ### `scripts/aws-cli/` — working operations tools
 
-Two read-only scripts, both with error handling and meaningful exit codes.
+Three read-only tools, all with error handling and meaningful exit codes.
 
 **`health-check.sh`** — confirms identity and region, then inventories the account.
 
@@ -49,7 +49,23 @@ Exit codes: `0` all clear · `1` warnings · `2` bad config · `3` auth failure.
 
 Exit codes: `0` clean · `1` log contains errors · `2` bad input.
 
-Both scripts are read-only by design and were tested against their failure paths, not just the happy path.
+**`log_summary.py`** — the same tool, rewritten in Python (same output, same exit codes).
+
+```bash
+python scripts/aws-cli/log_summary.py testdata/app.log
+```
+
+```
+=== LOG SUMMARY: testdata/app.log ===
+  total  : 7
+  ERROR  : 2
+  WARN   : 1
+  INFO   : 4
+```
+
+Two implementations of one design — used to prove the concepts transfer across languages.
+
+All scripts are read-only by design and were tested against their failure paths, not just the happy path.
 
 ### `lab-log/` — the evidence
 
@@ -62,6 +78,7 @@ One file per session: the commands actually run and the output actually returned
 | `day2-git.md` | Git — commit, branch, merge, rollback, push |
 | `day3.md` | AWS CLI — identity, `--query`, inventory, IAM troubleshooting |
 | `day4.md` | Bash scripting — first script written from scratch |
+| `day6.md` | Python — porting the script; YAML and its silent-parse dangers |
 
 ---
 
@@ -75,6 +92,7 @@ One file per session: the commands actually run and the output actually returned
 | **AWS CLI** | Named profiles, identity verification, JMESPath `--query`, read-only inventory |
 | **IAM** | Diagnosed and fixed a real `AccessDenied` — least privilege, narrow policies over broad ones |
 | **Bash** | Validation, exit codes, error handling, functions, loops, fail-fast design |
+| **Python** | `sys.argv`/`sys.exit`, `with open()`, f-strings, `Counter`, guard clauses; YAML parsing |
 | **Safety practice** | Read-only tooling, identity confirmed before every operation, no secrets committed |
 
 ---
@@ -83,7 +101,7 @@ One file per session: the commands actually run and the output actually returned
 
 Deliberate choices, because these are the habits that matter in operations:
 
-- **Read-only by default.** Both scripts only call `describe`/`list`/`get`. Nothing here mutates an account.
+- **Read-only by default.** The AWS tools only call `describe`/`list`/`get`. Nothing here mutates an account.
 - **Identity before action.** Every script proves which account it's talking to before touching anything. Working in the wrong account is how people destroy things.
 - **Exit codes are the product.** Pretty output is for humans; the exit code is what automation reads. Distinct codes for distinct failure types.
 - **Evidence over assertion.** Every lab-log entry contains real output. If it's claimed here, it ran.
@@ -97,7 +115,7 @@ Currently in the foundations phase. Next milestones, in order:
 
 - [x] Linux, networking, Git fundamentals
 - [x] AWS CLI read-only operations + first scripts
-- [ ] Python tooling
+- [x] Python tooling + YAML
 - [ ] Terraform + Docker
 - [ ] ECS Fargate deployment
 - [ ] GitHub Actions CI/CD with OIDC
