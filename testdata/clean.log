@@ -1,0 +1,5 @@
+2026-10-26 10:00:01 INFO  service started
+2026-10-26 10:00:02 INFO  connected to db
+2026-10-26 10:00:05 WARN  slow query 2.4s
+2026-10-26 10:00:11 INFO  retrying
+2026-10-26 10:00:15 INFO  recovered

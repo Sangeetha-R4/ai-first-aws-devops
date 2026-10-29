@@ -1,0 +1,10 @@
+name: my-app
+server:
+  host: localhost
+  port: 8080
+ports:
+  - 80
+  - 443
+tags:
+  env: dev
+  team: platform
