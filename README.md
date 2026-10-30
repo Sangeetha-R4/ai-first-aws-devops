@@ -79,6 +79,7 @@ One file per session: the commands actually run and the output actually returned
 | `day3.md` | AWS CLI — identity, `--query`, inventory, IAM troubleshooting |
 | `day4.md` | Bash scripting — first script written from scratch |
 | `day6.md` | Python — porting the script; YAML and its silent-parse dangers |
+| `day7.md` | Linux administration — SSH key auth, users, sudo, PATH, services |
 
 ---
 
@@ -93,6 +94,7 @@ One file per session: the commands actually run and the output actually returned
 | **IAM** | Diagnosed and fixed a real `AccessDenied` — least privilege, narrow policies over broad ones |
 | **Bash** | Validation, exit codes, error handling, functions, loops, fail-fast design |
 | **Python** | `sys.argv`/`sys.exit`, `with open()`, f-strings, `Counter`, guard clauses; YAML parsing |
+| **Linux administration** | SSH key auth (`sshd`, StrictModes, `authorized_keys`), user/group management, `sudo`, PATH, systemd vs containers |
 | **Safety practice** | Read-only tooling, identity confirmed before every operation, no secrets committed |
 
 ---
@@ -113,7 +115,7 @@ Deliberate choices, because these are the habits that matter in operations:
 
 Currently in the foundations phase. Next milestones, in order:
 
-- [x] Linux, networking, Git fundamentals
+- [x] Linux fundamentals + administration (SSH, users, services), networking, Git
 - [x] AWS CLI read-only operations + first scripts
 - [x] Python tooling + YAML
 - [ ] Terraform + Docker
