@@ -80,6 +80,7 @@ One file per session: the commands actually run and the output actually returned
 | `day4.md` | Bash scripting — first script written from scratch |
 | `day6.md` | Python — porting the script; YAML and its silent-parse dangers |
 | `day7.md` | Linux administration — SSH key auth, users, sudo, PATH, services |
+| `day8.md` | AWS depth — IAM policies, security groups vs NACLs, CloudWatch, AccessDenied |
 
 ---
 
@@ -95,6 +96,8 @@ One file per session: the commands actually run and the output actually returned
 | **Bash** | Validation, exit codes, error handling, functions, loops, fail-fast design |
 | **Python** | `sys.argv`/`sys.exit`, `with open()`, f-strings, `Counter`, guard clauses; YAML parsing |
 | **Linux administration** | SSH key auth (`sshd`, StrictModes, `authorized_keys`), user/group management, `sudo`, PATH, systemd vs containers |
+| **AWS networking security** | Security groups (stateful, allow-only, union) vs NACLs (stateless, ordered, allow+deny); debug order routes → NACL → SG |
+| **CloudWatch** | Log groups/streams/events, retention as cost control, metric filter patterns, alarm anatomy |
 | **Safety practice** | Read-only tooling, identity confirmed before every operation, no secrets committed |
 
 ---
