@@ -81,6 +81,7 @@ One file per session: the commands actually run and the output actually returned
 | `day6.md` | Python — porting the script; YAML and its silent-parse dangers |
 | `day7.md` | Linux administration — SSH key auth, users, sudo, PATH, services |
 | `day8.md` | AWS depth — IAM policies, security groups vs NACLs, CloudWatch, AccessDenied |
+| `day9.md` | CP Domain 1 + 4 — cloud concepts, pricing models, Free Tier, Organizations, support plans |
 
 ---
 
@@ -98,6 +99,8 @@ One file per session: the commands actually run and the output actually returned
 | **Linux administration** | SSH key auth (`sshd`, StrictModes, `authorized_keys`), user/group management, `sudo`, PATH, systemd vs containers |
 | **AWS networking security** | Security groups (stateful, allow-only, union) vs NACLs (stateless, ordered, allow+deny); debug order routes → NACL → SG |
 | **CloudWatch** | Log groups/streams/events, retention as cost control, metric filter patterns, alarm anatomy |
+| **Cloud concepts** | Six advantages, CapEx vs OpEx, IaaS/PaaS/SaaS responsibility split, 6 Well-Architected pillars, 6 CAF perspectives, regions vs AZs vs edge locations |
+| **AWS cost & governance** | Pricing models (On-Demand/RI/Savings Plans/Spot), Free Tier arithmetic, TCO, Organizations + SCP ceiling, Budgets vs Cost Explorer vs CUR, support plan tiers |
 | **Safety practice** | Read-only tooling, identity confirmed before every operation, no secrets committed |
 
 ---
