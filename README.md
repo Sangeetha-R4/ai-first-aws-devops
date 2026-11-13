@@ -82,6 +82,7 @@ One file per session: the commands actually run and the output actually returned
 | `day7.md` | Linux administration — SSH key auth, users, sudo, PATH, services |
 | `day8.md` | AWS depth — IAM policies, security groups vs NACLs, CloudWatch, AccessDenied |
 | `day9.md` | CP Domain 1 + 4 — cloud concepts, pricing models, Free Tier, Organizations, support plans |
+| `day10.md` | CP Domain 2 — shared responsibility, IAM hygiene, encryption/KMS, detection, secrets, compliance |
 
 ---
 
@@ -101,6 +102,7 @@ One file per session: the commands actually run and the output actually returned
 | **CloudWatch** | Log groups/streams/events, retention as cost control, metric filter patterns, alarm anatomy |
 | **Cloud concepts** | Six advantages, CapEx vs OpEx, IaaS/PaaS/SaaS responsibility split, 6 Well-Architected pillars, 6 CAF perspectives, regions vs AZs vs edge locations |
 | **AWS cost & governance** | Pricing models (On-Demand/RI/Savings Plans/Spot), Free Tier arithmetic, TCO, Organizations + SCP ceiling, Budgets vs Cost Explorer vs CUR, support plan tiers |
+| **AWS security practice** | Shared responsibility by service type, root/MFA/password-policy hygiene, SSE-S3 vs KMS vs SSE-C, envelope encryption, CloudTrail vs Config vs GuardDuty vs Inspector vs Macie, Shield vs WAF, Secrets Manager vs Parameter Store |
 | **Safety practice** | Read-only tooling, identity confirmed before every operation, no secrets committed |
 
 ---
