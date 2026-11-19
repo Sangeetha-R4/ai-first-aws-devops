@@ -84,6 +84,7 @@ One file per session: the commands actually run and the output actually returned
 | `day9.md` | CP Domain 1 + 4 — cloud concepts, pricing models, Free Tier, Organizations, support plans |
 | `day10.md` | CP Domain 2 — shared responsibility, IAM hygiene, encryption/KMS, detection, secrets, compliance |
 | `day11.md` | CP Domain 3 part 1 — compute families, Lambda limits, S3 classes, EBS types, RDS vs Aurora vs DynamoDB |
+| `day12.md` | CP Domain 3 part 2 — VPC, Route 53 policies, CloudFront/OAC, SQS vs SNS, management services |
 
 ---
 
